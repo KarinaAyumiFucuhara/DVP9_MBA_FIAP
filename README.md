@@ -15,12 +15,9 @@ Além do LB e o ASG, será provisionado o security group com as regras necessár
 
 # Solução de automação
 A solução de automação escolhida foi o Ansible. Os playbooks estão dentro da pasta "ansible_playbooks". Há 3 playbooks:
-  - installJava11.yml
-    Instala o Java 11 que é pré-requisito para instalação do Jenkins.
-  - installJenkins.yml
-    Instala o Jenkins.
-  - node-exporter.yml
-    Instala o agente do Prometheus para coletar as métricas e enviar ao servidor do Prometheus.
+  - installJava11.yml -> Instala o Java 11 que é pré-requisito para instalação do Jenkins.
+  - installJenkins.yml -> Instala o Jenkins.
+  - node-exporter.yml -> Instala o agente do Prometheus para coletar as métricas e enviar ao servidor do Prometheus.
     
 # Monitoração
 A ferramenta escolhida para fazer a monitoração é o Prometheus. O ansible possui um playbook para instalar o agente. Esse agente coletará as métricas e assim enviará as métricas para o servidor do Prometheus.
