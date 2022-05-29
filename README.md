@@ -20,8 +20,7 @@ A solução de automação escolhida foi o Ansible. Os playbooks estão dentro d
   - node-exporter.yml -> Instala o agente do Prometheus para coletar as métricas e enviar ao servidor do Prometheus.
     
 # Monitoração
-A ferramenta escolhida para fazer a monitoração é o Prometheus. O ansible possui um playbook para instalar o agente. Esse agente coletará as métricas e assim enviará as métricas para o servidor do Prometheus.
-
-
+A ferramenta escolhida para fazer a monitoração é o Prometheus que é um modelo distribuído e facilita o desacoplamento de componentes.
+O Ansible possui um playbook chamado "node-exporter.yml" para instalar o agente. Esse agente coletará as métricas e assim enviará as métricas para o servidor do Prometheus.
 
 
